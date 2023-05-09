@@ -6,6 +6,10 @@
     color: #777979;
 }
 
+a {
+    color: #777979;
+}
+
 .wrap {
     margin: auto 75px;
 }
@@ -107,4 +111,30 @@ i {
     background-color: #0F94CF;
     border-radius: 20px !important;
     color: white;
+}
+
+.phukien .product .card {
+    border: none !important;
+}
+
+.phukien .product .img {
+    width: 100% !important;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0F94CF;
+}
+
+footer .row .col-4 * {
+    color: white !important;
+}
+
+footer .row .col-4 ul li a {
+    text-decoration: none;
+}
+
+footer .row .col-4 ul li:hover a {
+    text-decoration: underline white;
 }

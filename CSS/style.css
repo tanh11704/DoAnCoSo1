@@ -15,6 +15,8 @@ i {
     color: #0F94CF;
 }
 
+/* HEADER */
+
 .header__logo i {
     font-size: 2rem;
 }
@@ -45,4 +47,64 @@ i {
 
 .active .nav-link i {
     color: white !important;
+}
+
+/* CONTENT */
+.title>h5::after {
+    content: "";
+    border: 1px solid #0F94CF;
+    display: block;
+    margin: 0;
+    transform: translateY(10px);
+}
+
+.product .card {
+    border: 1px solid #efefef !important;
+    border-radius: 5% !important;
+}
+
+.product .card .img {
+    border-bottom: none;
+    background-color: #f5f5f5;
+    border-radius: 5% 5% 0 0 !important;
+}
+
+.product .card .img * {
+    width: 80%;
+    height: auto;
+}
+
+.product .card .card-text {
+    color: #249B3E;
+}
+
+.page-link {
+    border: none;
+    color: gray;
+}
+
+.page-link:hover {
+    background-color: white;
+    border: none;
+    color: gray;
+}
+
+.pagination button {
+    box-shadow: 0px 3px 6px rgba(131, 146, 166, 0.1);
+    border-radius: 20px;
+}
+
+.page-item .page-link {
+    transition: all 0.5s;
+}
+
+.page-item.active .page-link {
+    background-color: #0F94CF;
+    border-radius: 20px !important;
+}
+
+.pagination .page-item:hover .page-link {
+    background-color: #0F94CF;
+    border-radius: 20px !important;
+    color: white;
 }

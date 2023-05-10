@@ -176,9 +176,29 @@ footer .row li:hover a {
     }
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .wrap {
+        margin: auto 0;
+    }
 
-@media (max-width: 991.98px) {}
+    .header__logo>h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrap {
+        margin: auto 10px;
+    }
+
+    .header__user>* {
+        display: block;
+    }
+
+    .header__user__line {
+        display: none;
+    }
+}
 
 @media (max-width: 1199.98px) {}
 

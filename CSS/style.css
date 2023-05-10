@@ -113,13 +113,27 @@ i {
     color: white;
 }
 
-.phukien .product .card {
+.phukien__product .card .img * {
+    width: 80%;
+    height: auto;
+}
+
+.phukien__product .card .card-text {
+    color: #249B3E;
+}
+
+.phukien__product .card {
     border: none !important;
 }
 
-.phukien .product .img {
+.phukien__product .img {
     width: 100% !important;
     height: auto;
+}
+
+.phukien__product .card:hover {
+    background-color: #efefef;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -127,14 +141,45 @@ footer {
     background-color: #0F94CF;
 }
 
-footer .row .col-4 * {
+footer .row * {
     color: white !important;
 }
 
-footer .row .col-4 ul li a {
+footer .row a {
     text-decoration: none;
 }
 
-footer .row .col-4 ul li:hover a {
+footer .row li:hover a {
     text-decoration: underline white;
 }
+
+/* RESPONSIVE */
+@media (max-width: 575.98px) {
+    .wrap {
+        margin: auto 0;
+    }
+
+    .header__logo>h1 {
+        display: none;
+    }
+
+    .header__user>* {
+        display: block;
+    }
+
+    .header__user__line {
+        display: none;
+    }
+
+    .product>div:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}

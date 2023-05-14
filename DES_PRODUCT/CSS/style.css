@@ -20,6 +20,14 @@ i {
     color: #0F94CF;
 }
 
+.price__color {
+    color: #FD475A;
+}
+
+.background__0F94CF {
+    background-color: #0F94CF;
+}
+
 /* HEADER */
 .header__logo i {
     font-size: 2rem;
@@ -69,6 +77,10 @@ a:hover {
 
 .menu>span {
     color: #0F94CF;
+}
+
+.choose__product>div>div>div:nth-child(2) {
+    background-color: #0F94CF;
 }
 
 /* FOOTER */

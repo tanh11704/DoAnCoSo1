@@ -83,6 +83,89 @@ a:hover {
     background-color: #0F94CF;
 }
 
+.choose__product__version .version {
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+.choose__product__version .version:hover {
+    border: 1px solid #0F94CF;
+}
+
+/* OFFER */
+.product__offer {
+    border: 1px solid #FD475A;
+}
+
+.product__offer .offer__title {
+    background-color: #FD475A;
+    transform: translate(0, -50%);
+    margin: 0;
+}
+
+.product__offer li {
+    color: #FD475A;
+}
+
+#buyNow {
+    border: 2px solid #0F94CF;
+    background-color: white;
+}
+
+#buyNow * {
+    color: #0F94CF;
+    transition: 0.8s;
+}
+
+#buyNow:hover {
+    background-color: #0F94CF;
+}
+
+#buyNow:hover * {
+    color: white;
+}
+
+#installment {
+    border: 2px solid #FD475A;
+    background-color: white;
+}
+
+#installment * {
+    color: #FD475A;
+    transition: 0.8s;
+}
+
+#installment:hover {
+    background-color: #FD475A;
+}
+
+#installment:hover * {
+    color: white;
+}
+
+#addCart {
+    border: 2px solid #FF990E;
+    background-color: white;
+}
+
+#addCart * {
+    color: #FF990E;
+    transition: 0.8s;
+}
+
+#addCart:hover {
+    background-color: #FF990E;
+}
+
+#addCart:hover * {
+    color: white;
+}
+
+
 /* FOOTER */
 footer {
     background-color: #0F94CF;
@@ -99,3 +182,54 @@ footer .row a {
 footer .row li:hover a {
     text-decoration: underline white;
 }
+
+/* RESPONSIVE */
+@media (max-width: 575.98px) {
+    .wrap {
+        margin: auto 0;
+    }
+
+    .header__logo>h1 {
+        display: none;
+    }
+
+    .header__user>* {
+        display: block;
+    }
+
+    .header__user__line {
+        display: none;
+    }
+
+    .product>div:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .wrap {
+        margin: auto 0;
+    }
+
+    .header__logo>h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .wrap {
+        margin: auto 10px;
+    }
+
+    .header__user>* {
+        display: block;
+    }
+
+    .header__user__line {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 1399.98px) {}

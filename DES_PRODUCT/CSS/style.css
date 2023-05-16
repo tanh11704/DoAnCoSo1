@@ -28,6 +28,24 @@ i {
     background-color: #0F94CF;
 }
 
+.title>h5::after {
+    content: "";
+    border: 1px solid #0F94CF;
+    display: block;
+    margin: 0;
+    transform: translateY(10px);
+}
+
+.comment button {
+    border: 1px solid #0F94CF;
+    color: #0F94CF;
+}
+
+.comment button:hover {
+    background-color: #0F94CF !important;
+    color: white;
+}
+
 /* HEADER */
 .header__logo i {
     font-size: 2rem;
@@ -165,6 +183,14 @@ label {
     color: white;
 }
 
+/* SPECIFICATION */
+.specifications__left *:no-button {
+    color: black;
+}
+
+.specifications__left__content__collage {
+    height: 789px;
+}
 
 /* FOOTER */
 footer {

@@ -177,6 +177,7 @@ footer .row li:hover a {
     .product>div:nth-child(n+3) {
         display: none;
     }
+
 }
 
 @media (max-width: 767.98px) {
@@ -185,6 +186,10 @@ footer .row li:hover a {
     }
 
     .header__logo>h1 {
+        display: none;
+    }
+
+    .product>div:nth-child(n+4) {
         display: none;
     }
 }
@@ -199,6 +204,10 @@ footer .row li:hover a {
     }
 
     .header__user__line {
+        display: none;
+    }
+
+    .product>div:nth-child(n+5) {
         display: none;
     }
 }

@@ -69,6 +69,11 @@ i {
 .product .card {
     border: 1px solid #efefef !important;
     border-radius: 5% !important;
+    transition: 0.2s;
+}
+
+.product .card:hover {
+    transform: scale(1.1);
 }
 
 .product .card .img {

@@ -31,14 +31,20 @@ $(document).ready(function () {
       let checkedElement = $(
         ".content__body__products input[type='checkbox']:checked"
       );
-      let listProductsCheckedElements = $(checkedElement).closest(".card-body");
+      let listProductsCheckedElements = $(checkedElement).closest(".card");
       $(listProductsCheckedElements).each(function () {
         let nameProductChecked = $(this).find("h5").text();
+        let capacityProductChecked = $(this).find(".capacity").text();
+        let colorProductChecked = $(this).find(".color").text();
+        let imgProductChecked = $(this).find("img").attr("src");
         cartItems = cartItems.filter(
-          (item) => item.name !== nameProductChecked
+          (item) =>
+            item.name !== nameProductChecked ||
+            item.capacity !== capacityProductChecked ||
+            item.color !== colorProductChecked ||
+            item.imgUrl !== imgProductChecked
         );
       });
-
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
       loadProducts();
     }

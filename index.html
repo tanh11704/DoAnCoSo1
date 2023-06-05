@@ -8,6 +8,8 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <title>Apple Mart</title>
 </head>
@@ -158,10 +160,6 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">FLASH SALE</h5>
-                    <a>
-                        <span>Xem tất cả</span>
-                        <span><i class="fa fa-angle-right ms-2"></i></span>
-                    </a>
                 </div>
                 <hr class="m-0">
                 <div class="product d-flex justify-content-between my-3">
@@ -237,15 +235,15 @@
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item">
+                            <li class="page-item pagination-pre">
                                 <button class="page-link mx-2" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
                                 </button>
                             </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
+                            <li class="page-item pagination-index active"><button class="page-link mx-2">1</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">2</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">3</button></li>
+                            <li class="page-item pagination-next">
                                 <button class="page-link mx-2" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
                                 </button>
@@ -261,7 +259,7 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">iPhone</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/iPhone.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
@@ -338,15 +336,15 @@
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item">
+                            <li class="page-item pagination-pre">
                                 <button class="page-link mx-2" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
                                 </button>
                             </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
+                            <li class="page-item pagination-index active"><button class="page-link mx-2">1</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">2</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">3</button></li>
+                            <li class="page-item pagination-next">
                                 <button class="page-link mx-2" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
                                 </button>
@@ -362,7 +360,7 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">iPad</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/iPad.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
@@ -439,15 +437,15 @@
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item">
+                            <li class="page-item pagination-pre">
                                 <button class="page-link mx-2" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
                                 </button>
                             </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
+                            <li class="page-item pagination-index active"><button class="page-link mx-2">1</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">2</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">3</button></li>
+                            <li class="page-item pagination-next">
                                 <button class="page-link mx-2" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
                                 </button>
@@ -463,7 +461,7 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">MacBook</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/macbook.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
@@ -540,15 +538,15 @@
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item">
+                            <li class="page-item pagination-pre">
                                 <button class="page-link mx-2" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
                                 </button>
                             </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
+                            <li class="page-item pagination-index active"><button class="page-link mx-2">1</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">2</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">3</button></li>
+                            <li class="page-item pagination-next">
                                 <button class="page-link mx-2" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
                                 </button>
@@ -564,7 +562,7 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">AirPods</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/airpods.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
@@ -641,15 +639,15 @@
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item">
+                            <li class="page-item pagination-pre">
                                 <button class="page-link mx-2" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
                                 </button>
                             </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
+                            <li class="page-item pagination-index active"><button class="page-link mx-2">1</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">2</button></li>
+                            <li class="page-item pagination-index"><button class="page-link mx-2">3</button></li>
+                            <li class="page-item pagination-next">
                                 <button class="page-link mx-2" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
                                 </button>
@@ -665,7 +663,7 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">PHỤ KIỆN</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/orther.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
@@ -760,6 +758,7 @@
         </div>
     </footer>
 
+    <script src="./JS/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

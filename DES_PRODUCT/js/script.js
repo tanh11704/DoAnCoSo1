@@ -95,7 +95,7 @@ $(document).ready(function () {
     let color = $(productElement)
       .find("input[type='radio'][name='phone-color']:checked")
       .val();
-    let imgUrl = "." + "./img/ip14-prm-" + color.toLowerCase() + ".webp";
+
     let capacity = $(productElement)
       .find("input[type='radio'][name='phone-version']:checked")
       .val();
@@ -108,14 +108,13 @@ $(document).ready(function () {
         .replaceAll(",", "")
     );
 
-    if (
-      capacity === undefined ||
-      capacity === "" ||
-      color === undefined ||
-      color === ""
-    ) {
+    if (capacity === undefined || capacity === "") {
       alert("Vui lòng chọn phiên bản mong muốn của bạn!");
+    } else if (color === undefined || color === "") {
+      alert("Vui lòng chọn màu sắc mong muốn của bạn!");
     } else {
+      let imgUrl = "." + "./img/ip14-prm-" + color.toLowerCase() + ".webp";
+
       let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
       let product = {

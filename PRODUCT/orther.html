@@ -121,15 +121,18 @@
             <div class="content row justify-content-center justify-content-md-between">
                 <div class="content__filter col-12 col-md-3 py-2" style="height: fit-content;">
                     <div class="d-block d-md-none">
-                        <button class="btn border-info">
+                        <button id="filter-button" class="btn border-info">
                             <i class="fa fa-filter"></i> Lọc
                         </button>
                     </div>
-                    <div class="d-none d-md-block">
+                    <div id="filter" class="d-none d-md-block">
                         <div class="content__filter__title text-center mb-3">
-                            <h5>LỌC SẢN PHẨM</h5>
+                            <h5 class="me-auto">LỌC SẢN PHẨM</h5>
+                            <button class="d-block d-md-none position-absolute bg-white rounded-3 border-0"
+                                id="close-filter" style="top: 0; right: 0;">
+                                <i class="fa fa-times p-2" aria-hidden="true"></i>
+                            </button>
                         </div>
-                        <hr>
                         <div class="filter__group, filter-accessory mb-3">
                             <h6>Loại Phụ Kiện</h6>
                             <div class="row justify-content-around">
@@ -299,6 +302,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

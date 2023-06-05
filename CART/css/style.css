@@ -98,6 +98,7 @@ input {
 
 .content__body__form {
     width: 50%;
+    height: fit-content;
 }
 
 .content__body__form>div>input:focus,

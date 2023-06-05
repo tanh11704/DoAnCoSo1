@@ -80,14 +80,16 @@ input {
 
 .filter-version .col-5,
 .filter-color .col-5,
-.filter-model .col-5 {
+.filter-model .col-5,
+.filter-accessory .col-5 {
     background-color: lightgray;
     margin: 5px 0;
 }
 
 .filter-version .col-5 input[type="checkbox"],
 .filter-color .col-5 input[type="checkbox"],
-.filter-model .col-5 input[type="radio"] {
+.filter-model .col-5 input[type="radio"],
+.filter-accessory .col-5 input[type="radio"] {
     position: absolute;
     transform: translate(-50%, -50%);
     border: 0 !important;
@@ -95,7 +97,8 @@ input {
 
 .filter-version .col-5 input[type="checkbox"]:checked,
 .filter-color .col-5 input[type="checkbox"]:checked,
-.filter-model .col-5 input[type="radio"]:checked {
+.filter-model .col-5 input[type="radio"]:checked,
+.filter-accessory .col-5 input[type="radio"]:checked {
     background-color: #0F94CF;
 }
 
@@ -166,7 +169,7 @@ footer .row li:hover a {
 
 @media (max-width: 767.98px) {
     .wrap {
-        margin: auto 0;
+        margin: auto 10;
     }
 
     .header__logo>h1 {
@@ -180,7 +183,7 @@ footer .row li:hover a {
 
 @media (max-width: 991.98px) {
     .wrap {
-        margin: auto 10px;
+        margin: auto 15px;
     }
 
     .header__user>* {

@@ -12,41 +12,93 @@ $(document).ready(function () {
     let district = $(this).find('select[name="district"]').val();
     let paymentMethod = $(this).find("#payment-selected").val();
     if (totalPrice === 0) {
-      alert("Vui lòng chọn sản phẩm để thanh toán!");
-    } else if (fullName.length === 0) {
-      alert("Vui lòng nhập họ tên của bạn!");
-    } else if (checkPhoneNumber(phoneNumber) === false) {
-      alert("Vui lòng nhập đúng định dạng số điện thoại!");
-    } else if (checkMail(email) === false) {
-      alert("Vui lòng nhập đúng định dạng email!");
-    } else if (province === 0) {
-      alert("Vui lòng chọn Tỉnh thành của bạn!");
-    } else if (district === 0) {
-      alert("Vui lòng chọn Huyện của bạn!");
-    } else if (paymentMethod === 0) {
-      alert("Vui lòng chọn hình thức thanh toán!");
-    } else {
-      alert("Thanh toán thành công!");
-      let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-      let checkedElement = $(
-        ".content__body__products input[type='checkbox']:checked"
-      );
-      let listProductsCheckedElements = $(checkedElement).closest(".card");
-      $(listProductsCheckedElements).each(function () {
-        let nameProductChecked = $(this).find("h5").text();
-        let capacityProductChecked = $(this).find(".capacity").text();
-        let colorProductChecked = $(this).find(".color").text();
-        let imgProductChecked = $(this).find("img").attr("src");
-        cartItems = cartItems.filter(
-          (item) =>
-            item.name !== nameProductChecked ||
-            item.capacity !== capacityProductChecked ||
-            item.color !== colorProductChecked ||
-            item.imgUrl !== imgProductChecked
-        );
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng chọn sản phẩm để thanh toán.",
+        icon: "error",
+        button: "OK",
       });
-      localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      loadProducts();
+    } else if (fullName.length === 0) {
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng nhập họ tên của bạn.",
+        icon: "error",
+        button: "OK",
+      });
+    } else if (checkPhoneNumber(phoneNumber) === false) {
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng nhập đúng định dạng số điện thoại.",
+        icon: "error",
+        button: "OK",
+      });
+    } else if (checkMail(email) === false) {
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng nhập đúng định dạng email.",
+        icon: "error",
+        button: "OK",
+      });
+    } else if (province === 0) {
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng chọn Tỉnh thành của bạn.",
+        icon: "error",
+        button: "OK",
+      });
+    } else if (district === 0) {
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng chọn Huyện của bạn.",
+        icon: "error",
+        button: "OK",
+      });
+    } else if (paymentMethod === 0) {
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng chọn hình thức thanh toán.",
+        icon: "error",
+        button: "OK",
+      });
+    } else {
+      swal({
+        title: "Vui lòng xác nhận!",
+        text: "Bạn có chắc chắn muốn thanh toán sản phẩm này?",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      }).then((willDelete) => {
+        if (willDelete) {
+          let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+          let checkedElement = $(
+            ".content__body__products input[type='checkbox']:checked"
+          );
+          let listProductsCheckedElements = $(checkedElement).closest(".card");
+          $(listProductsCheckedElements).each(function () {
+            let nameProductChecked = $(this).find("h5").text();
+            let capacityProductChecked = $(this).find(".capacity").text();
+            let colorProductChecked = $(this).find(".color").text();
+            let imgProductChecked = $(this).find("img").attr("src");
+            cartItems = cartItems.filter(
+              (item) =>
+                item.name !== nameProductChecked ||
+                item.capacity !== capacityProductChecked ||
+                item.color !== colorProductChecked ||
+                item.imgUrl !== imgProductChecked
+            );
+          });
+          localStorage.setItem("cartItems", JSON.stringify(cartItems));
+          loadProducts();
+          swal("Thanh toán thành công!", {
+            icon: "success",
+          });
+        } else {
+          swal("Sản phẩm chưa được thanh toán!", {
+            icon: "error",
+          });
+          loadProducts();
+        }
+      });
     }
   });
 

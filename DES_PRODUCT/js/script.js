@@ -109,9 +109,19 @@ $(document).ready(function () {
     );
 
     if (capacity === undefined || capacity === "") {
-      alert("Vui lòng chọn phiên bản mong muốn của bạn!");
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng chọn phiên bản mong muốn của bạn.",
+        icon: "error",
+        button: "OK",
+      });
     } else if (color === undefined || color === "") {
-      alert("Vui lòng chọn màu sắc mong muốn của bạn!");
+      swal({
+        title: "Lỗi!",
+        text: "Vui lòng chọn màu sắc mong muốn của bạn.",
+        icon: "error",
+        button: "OK",
+      });
     } else {
       let imgUrl = "." + "./img/ip14-prm-" + color.toLowerCase() + ".webp";
 
@@ -127,7 +137,21 @@ $(document).ready(function () {
 
       cartItems.push(product);
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      alert("Thêm vào giỏ hàng thành công!");
+      Toastify({
+        text: "Đã thêm sản phẩm vào giỏ hàng thành công",
+        duration: 1500,
+        destination: "../../CART/index.html",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #96c93d, #0F94CF)",
+          padding: "20px 10px",
+        },
+        onClick: function () {}, // Callback after click
+      }).showToast();
     }
   });
 

@@ -195,6 +195,11 @@ $(document).ready(function () {
       },
     });
   });
+
+  $("#installment").click(function (e) {
+    e.preventDefault();
+    window.location.href = "../../PAYMENT/tragop.html";
+  });
 });
 
 function setImage(imgComponent, index) {

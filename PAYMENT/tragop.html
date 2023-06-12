@@ -8,12 +8,14 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">">
+    <!-- Thư Viện Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <!-- Thư viện Sweet Alert -->
+    <!-- Thư Viện SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Giỏ hàng</title>
+
+    <title>Trả Góp Qua Visa</title>
 </head>
 
 <body>
@@ -43,11 +45,11 @@
                     <span class="input-group-text background_color_second border-0"><i class="fa fa-list-ul"></i></span>
                 </div>
                 <div class="header__user ms-2">
-                    <a class="me-2 text-decoration-none" href="../LOGIN/index.html">
+                    <a class="me-2 text-decoration-none" href="./LOGIN/index.html">
                         <i class="fa fa-user"></i> Đăng nhập
                     </a>
                     <span class="header__user__line mx-2">|</span>
-                    <a class="text-decoration-none" href="#">
+                    <a class="text-decoration-none" href="./CART/index.html">
                         <i class="fa fa-shopping-cart"></i> Giỏ hàng
                     </a>
                 </div>
@@ -113,114 +115,84 @@
         <hr>
     </header>
 
-    <!-- CONTENT -->
-    <main class="my-3">
-        <section class="wrap">
-            <section class="menu mb-3">
-                <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a> <i class="fa fa-angle-right"></i>
-                <span>Giỏ hàng</span>
-            </section>
-            <section class="content">
-                <h1 class="text-center fw-bold my-3">GIỎ HÀNG</h1>
-                <div class="content__body my-4 row justify-content-lg-between justify-content-center">
-                    <div class="content__body__products me-2 col-lg-5 col-md-12">
-
+    <!-- PAYMENT FORM -->
+    <main>
+        <div class="container d-flex justify-content-center align-items-center p-3">
+            <form action="" class="w-75 shadow p-3" id="paymentForm">
+                <div class="row flex-wrap gap-3">
+                    <div class="col">
+                        <h3 class="title">Địa Chỉ Thanh Toán</h3>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Họ tên</label>
+                            <input type="fullName" class="form-control shadow-none" name="fullName" id="fullName"
+                                placeholder="Nguyễn Văn A" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control shadow-none" name="email" id="email"
+                                placeholder="nguyenvana@gmail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Thành Phố</label>
+                            <input type="text" class="form-control shadow-none" name="city" id="city"
+                                placeholder="Quảng Nam" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Địa Chỉ</label>
+                            <input type="text" class="form-control shadow-none" name="address" id="address"
+                                placeholder="số nhà, tên đường" required>
+                        </div>
+                        <div class="mb-3 row justify-content-between">
+                            <div class="col">
+                                <label for="state" class="form-label">Tiểu Bang</label>
+                                <input type="text" class="form-control shadow-none" name="state" id="state"
+                                    placeholder="Quảng Nam" required>
+                            </div>
+                            <div class="col">
+                                <label for="zipcode" class="form-label">Mã Zip</label>
+                                <input type="text" class="form-control shadow-none" name="zipcode" id="zipcode"
+                                    placeholder="51000" required>
+                            </div>
+                        </div>
                     </div>
-                    <form action="" class="content__body__form shadow border-0 px-5 pb-4 ms-2 col-lg-4 col-md-12">
-                        <legend class="title__color text-center fw-bold">Thông tin đặt hàng</legend>
-                        <div class="mb-3 row align-items-center">
-                            <input class="form-control col rounded-pill ps-3 shadow-none" type="text"
-                                placeholder="Họ và tên*" name="txtName">
-                            <span class="col-1">
-                                <small class="d-none">
-                                    <i class="fa fa-times me-1 text-danger"></i>
-                                </small>
-                                <small class="d-none">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                </small>
-                            </span>
+                    <div class="col">
+                        <h3 class="title">Thông Tin Thanh Toán</h3>
+                        <div class="mb-3">
+                            <label class="form-label">Thẻ Được Chấp Nhận:</label>
+                            <img src="./img/card_img.png" alt="Loại thẻ">
                         </div>
-                        <div class="mb-3 row align-items-center">
-                            <input class="form-control col rounded-pill ps-3 shadow-none" type="text"
-                                placeholder="Số điện thoại*" name="txtPhone">
-                            <span class=" col-1">
-                                <small class="d-none">
-                                    <i class="fa fa-times me-1 text-danger"></i>
-                                </small>
-                                <small class="d-none">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                </small>
-                            </span>
+                        <div class="mb-3">
+                            <label for="nameOnCard" class="form-label">Tên Trên Thẻ</label>
+                            <input type="text" class="form-control shadow-none" name="nameOnCard" id="nameOnCard"
+                                placeholder="NGUYEN VAN A" required>
                         </div>
-                        <div class="mb-3 row align-items-center">
-                            <input class="form-control col rounded-pill ps-3 shadow-none" type="text"
-                                placeholder="Địa chỉ email*" name="txtMail">
-                            <span class=" col-1">
-                                <small class="d-none">
-                                    <i class="fa fa-times me-1 text-danger"></i>
-                                </small>
-                                <small class="d-none">
-                                    <i class="fa fa-check-circle text-success"></i>
-                                </small>
-                            </span>
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Mã Thẻ</label>
+                            <input type="text" class="form-control shadow-none" name="cardNumber" id="cardNumber"
+                                placeholder="1111-2222-3333-4444" required>
                         </div>
-                        <div class="mb-3 row align-items-center">
-                            <strong>Địa chỉ nhận hàng</strong>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control shadow-none" name="cvv" id="cvv" placeholder="1234"
+                                required>
                         </div>
-                        <div class="mb-3 row align-items-center">
-                            <select class="form-select rounded-pill me-2 shadow-none col" name="province">
-                                <option value="0" selected>Tỉnh</option>
-                                <option value="1">Hà Nội</option>
-                                <option value="2">Đà Nẵng</option>
-                                <option value="3">Hồ Chí Minh</option>
-                            </select>
-                            <select class="form-select rounded-pill ms-2 shadow-none col" name="district">
-                                <option value="0" selected>Quận</option>
-                            </select>
-                            <span class="col-1"></span>
+                        <div class="mb-3 row justify-content-between">
+                            <div class="col">
+                                <label for="exYear" class="form-label">Năm Hết Hạn</label>
+                                <input type="text" class="form-control shadow-none" name="exYear" id="exYear"
+                                    placeholder="2030" required>
+                            </div>
+                            <div class="col">
+                                <label for="exMonth" class="form-label">Tháng Hết Hạn</label>
+                                <input type="text" class="form-control shadow-none" name="exMonth" id="exMonth"
+                                    placeholder="7" required>
+                            </div>
                         </div>
-                        <div class="mb-3 row align-items-center">
-                            <textarea name="" id="" cols="30" rows="3" class="form-control rounded-3 shadow-none col"
-                                placeholder="Ghi chú" name="note"></textarea>
-                            <span class="col-1"></span>
-                        </div>
-                        <div class="mb-3 d-flex justify-content-between">
-                            <strong>Thông tin thanh toán</strong>
-                            <strong>Tổng tiền: <span class="price__color pricesTotal"></span></strong>
-                            <span class="col-1"></span>
-                        </div>
-                        <div class="mb-3 row align-items-center">
-                            <select class="form-select shadow-none col" id="payment-selected"
-                                aria-label="Default select example">
-                                <option value="0" selected>Hình thức thanh toán</option>
-                                <option value="1">Thanh toán khi nhận hàng</option>
-                                <option value="2">Chuyển tiền qua ngân hàng</option>
-                                <option value="3">Chuyển tiền qua MoMo</option>
-                            </select>
-                            <span class="col-1"></span>
-                        </div>
-                        <div class="mb-3 ms-4 d-none" id="bank-transfer">
-                            <strong>Chủ tài khoản:</strong> TRAN PHUOC ANH <br>
-                            <strong>Số tài khoản:</strong> 1019558246 <br>
-                            <strong>Ngân hàng:</strong> VIETCOMBANK <br>
-                            <strong>Chi nhánh:</strong> Quảng Nam
-                        </div>
-                        <div class="mb-3 ms-4 d-none" id="momo-transfer">
-                            <strong>Chủ tài khoản:</strong> TRAN PHUOC ANH <br>
-                            <strong>Số tài khoản:</strong> 0773605741 <br>
-                            <strong>Ngân hàng:</strong> MoMo <br>
-                            <strong>Chi nhánh:</strong> Quảng Nam
-                        </div>
-                        <div class="mb-3 row align-items-center">
-                            <button class="rounded-pill form-control title__color col" type="submit">
-                                Xác nhận và thanh toán
-                            </button>
-                            <span class="col-1"></span>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </section>
-        </section>
+                <button class="btn btn-success form-control shadow-none" type="submit">Thanh Toán</button>
+            </form>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -248,8 +220,10 @@
                     </span>
                     <span class="mt-5">
                         <h5>Tải Ứng Dụng</h5>
-                        <img class="w-25" src="./img/Download_on_the_App_Store_logo.png" alt="">
-                        <img class="w-25" src="./img/R.png" alt="">
+                        <a href="https://www.apple.com/app-store/"><img class="w-25"
+                                src="./img/Download_on_the_App_Store_logo.png" alt=""></a>
+                        <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1"><img class="w-25"
+                                src="./img/R.png" alt=""></a>
                     </span>
                 </div>
                 <div class="col-6">
@@ -269,6 +243,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>

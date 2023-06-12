@@ -28,6 +28,26 @@ $(document).ready(function () {
         .addClass("active");
       $(listPaginationIndex).removeClass("active");
       preElement.addClass("active");
+
+      let typeProduct = $(preElement).closest("section").attr("class");
+      let index = $(preElement).find("button").text();
+
+      if (typeProduct === "flashsale") {
+        flashSalePage--;
+        changeFlashSalePage(index);
+      } else if (typeProduct === "iPhone") {
+        iPhonePage--;
+        changeIphonePage(iPhonePage);
+      } else if (typeProduct === "iPad") {
+        iPadPage--;
+        changeIpadPage(iPadPage);
+      } else if (typeProduct === "macBook") {
+        macBookPage--;
+        changeMacbookPage(macBookPage);
+      } else if (typeProduct === "airPods") {
+        airpodsPage--;
+        changeAirpodsPage(airpodsPage);
+      }
     }
   });
 
@@ -51,6 +71,26 @@ $(document).ready(function () {
         .addClass("active");
       $(listPaginationIndex).removeClass("active");
       preElement.addClass("active");
+
+      let typeProduct = $(preElement).closest("section").attr("class");
+      let index = $(preElement).find("button").text();
+
+      if (typeProduct === "flashsale") {
+        flashSalePage++;
+        changeFlashSalePage(index);
+      } else if (typeProduct === "iPhone") {
+        iPhonePage++;
+        changeIphonePage(iPhonePage);
+      } else if (typeProduct === "iPad") {
+        iPadPage++;
+        changeIpadPage(iPadPage);
+      } else if (typeProduct === "macBook") {
+        macBookPage++;
+        changeMacbookPage(macBookPage);
+      } else if (typeProduct === "airPods") {
+        airpodsPage++;
+        changeAirpodsPage(airpodsPage);
+      }
     }
   });
 });
@@ -513,10 +553,6 @@ function loadProduct() {
   loadFlashSale();
 }
 
-window.addEventListener("resize", function () {
-  loadProduct();
-});
-
 function listFlashSalePage() {
   let count = Math.ceil(flashSaleProducts.length / limit);
   let container = $(".flashsale ul.pagination");
@@ -687,3 +723,8 @@ function changeAirpodsPage(i) {
 
 loadProduct();
 loadPagination();
+
+window.addEventListener("resize", function () {
+  loadProduct();
+  loadPagination();
+});

@@ -270,7 +270,7 @@ function loadPrice() {
 }
 
 function checkPhoneNumber(phoneNumber) {
-  var phonePattern = /^0[0-9]{9}$/;
+  var phonePattern = /^(\+84|0)\d{9}$/;
 
   if (phonePattern.test(phoneNumber)) {
     return true;
@@ -280,7 +280,7 @@ function checkPhoneNumber(phoneNumber) {
 }
 
 function checkMail(mail) {
-  var emailPattern = /^\w+@\w+\.\w+$/;
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (emailPattern.test(mail)) {
     return true;

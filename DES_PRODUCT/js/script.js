@@ -5,24 +5,6 @@ imagesUrl = $.map(imagesUrl, function (element) {
 });
 
 $(document).ready(function () {
-  $("#buyNowButton").on("click", function () {
-    $("#dialog-form").dialog({
-      autoOpen: true,
-      modal: true,
-      width: 400,
-      buttons: {
-        Mua: function () {
-          // Xử lý khi người dùng nhấn nút "Mua"
-          $(this).dialog("close");
-        },
-        Hủy: function () {
-          // Xử lý khi người dùng nhấn nút "Hủy"
-          $(this).dialog("close");
-        },
-      },
-    });
-  });
-
   $(".version").click(function (e) {
     e.preventDefault();
     $(this).find('input[type="radio"]').prop("checked", true);
@@ -178,22 +160,9 @@ $(document).ready(function () {
     console.log($("input[type='radio'][name='phone-color']"));
   });
 
-  $("#buyNow").on("click", function () {
-    $("#buyNow-form").dialog({
-      autoOpen: true,
-      modal: true,
-      width: 400,
-      buttons: {
-        Mua: function () {
-          // Xử lý khi người dùng nhấn nút "Mua"
-          $(this).dialog("close");
-        },
-        Hủy: function () {
-          // Xử lý khi người dùng nhấn nút "Hủy"
-          $(this).dialog("close");
-        },
-      },
-    });
+  $("#buyNow").click(function (e) {
+    e.preventDefault();
+    window.location.href = "../../PAYMENT/buyNow.html";
   });
 
   $("#installment").click(function (e) {

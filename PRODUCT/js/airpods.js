@@ -3,25 +3,25 @@ let airpodsProducts = [
     name: `AirPods Pro 2 - Chính hãng Apple Việt Nam`,
     price: "7,990,000 ₫",
     img: "./img/airpods-pro-2.webp",
-    link: "./DES_PRODUCT/iphone14.html",
+    link: "../DES_PRODUCT/iphone14.html",
   },
   {
     name: `Airpods 3 - Lightning Charging Case – Chính hãng Apple Việt Nam`,
     price: "4,990,000 ₫",
     img: "./img/airpods-3.webp",
-    link: "./DES_PRODUCT/iphone14.html",
+    link: "../DES_PRODUCT/iphone14.html",
   },
   {
     name: `AirPods 2 - Case sạc thường chính hãng VN/A (MV7N2VN/A)`,
     price: "4,990,000 ₫",
     img: "./img/airpods-2.webp",
-    link: "./DES_PRODUCT/iphone14.html",
+    link: "../DES_PRODUCT/iphone14.html",
   },
   {
     name: `AirPods Pro - Chính Hãng Apple (MLWK3ZP/A, MagSafe)`,
     price: "7,990,000 ₫",
     img: "./img/airpods-pro.webp",
-    link: "./DES_PRODUCT/iphone14.html",
+    link: "../DES_PRODUCT/iphone14.html",
   },
 ];
 

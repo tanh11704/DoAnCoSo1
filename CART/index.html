@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!-- Thư viện Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+
+        <!-- WELCOME -->
+        <section class="header__welcome bg-light">
+            <div class="wrap d-flex justify-content-between py-2">
+                <div>Chào mừng bạn đến với Apple Mart</div>
+                <div><i class="fa fa-map-marker-alt me-2"></i> Đà Nẵng</div>
+            </div>
+        </section>
+
+        <!-- CENTER -->
+        <section>
+            <div class="wrap d-flex justify-content-between align-items-center my-2">
+                <div class="header__logo d-flex align-items-center">
+                    <i class="fa fa-stream me-3"></i>
+                    <h1 class="title__color">Apple Mart</h1>
+                </div>
+                <div class="header__search  input-group w-50">
+                    <span class="input-group-text border-0 background_color_second" style="background-color: white;"><i
+                            class="fa fa-search"></i></span>
+                    <input type="text" class="form-control border-0 background_color_second p-2"
+                        placeholder="Tìm kiếm sản phẩm">
+                    <span class="input-group-text background_color_second border-0"><i class="fa fa-list-ul"></i></span>
+                </div>
+                <div class="header__user ms-2">
+                    <a class="me-2 text-decoration-none" href="../LOGIN/index.html">
+                        <i class="fa fa-user"></i> Đăng nhập
+                    </a>
+                    <span class="header__user__line mx-2">|</span>
+                    <a class="text-decoration-none" href="#">
+                        <i class="fa fa-shopping-cart"></i> Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0">
+        <!-- NAVIGATION BAR -->
+        <nav class="header__navbar navbar-expand-md navbar-light my-2">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="navbar-toggler d-flex border-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <span class="navbar-toggler border-0" href="#" style="color: #777979;">Danh sách sản
+                            phẩm</span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-between w-100">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../index.html">
+                                    Trang Chủ
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../PRODUCT/iPhone.html">
+                                    iPhone
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../PRODUCT/iPad.html">
+                                    iPad
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../PRODUCT/macbook.html">
+                                    MacBook
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../PRODUCT/airpods.html">
+                                    AirPods
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../PRODUCT/orther.html">
+                                    Khác
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="my-3">
+        <section class="wrap">
+            <section class="menu mb-3">
+                <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a> <i class="fa fa-angle-right"></i>
+                <span>Giỏ hàng</span>
+            </section>
+            <section class="content">
+                <h1 class="text-center fw-bold my-3">GIỎ HÀNG</h1>
+                <div class="content__body my-4 row justify-content-lg-between justify-content-center">
+                    <div class="content__body__products me-2 col-lg-5 col-md-12">
+
+                    </div>
+                    <form action="" class="content__body__form shadow border-0 px-5 pb-4 ms-2 col-lg-4 col-md-12">
+                        <legend class="title__color text-center fw-bold">Thông tin đặt hàng</legend>
+                        <div class="mb-3 row align-items-center">
+                            <input class="form-control col rounded-pill ps-3 shadow-none" type="text"
+                                placeholder="Họ và tên*" name="txtName">
+                            <span class="col-1">
+                                <small class="d-none">
+                                    <i class="fa fa-times me-1 text-danger"></i>
+                                </small>
+                                <small class="d-none">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <input class="form-control col rounded-pill ps-3 shadow-none" type="text"
+                                placeholder="Số điện thoại*" name="txtPhone">
+                            <span class=" col-1">
+                                <small class="d-none">
+                                    <i class="fa fa-times me-1 text-danger"></i>
+                                </small>
+                                <small class="d-none">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <input class="form-control col rounded-pill ps-3 shadow-none" type="text"
+                                placeholder="Địa chỉ email*" name="txtMail">
+                            <span class=" col-1">
+                                <small class="d-none">
+                                    <i class="fa fa-times me-1 text-danger"></i>
+                                </small>
+                                <small class="d-none">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                </small>
+                            </span>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <strong>Địa chỉ nhận hàng</strong>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <select class="form-select rounded-pill me-2 shadow-none col" name="province">
+                                <option value="0" selected>Tỉnh</option>
+                                <option value="1">Hà Nội</option>
+                                <option value="2">Đà Nẵng</option>
+                                <option value="3">Hồ Chí Minh</option>
+                            </select>
+                            <select class="form-select rounded-pill ms-2 shadow-none col" name="district">
+                                <option value="0" selected>Quận</option>
+                            </select>
+                            <span class="col-1"></span>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <textarea name="" id="" cols="30" rows="3" class="form-control rounded-3 shadow-none col"
+                                placeholder="Ghi chú" name="note"></textarea>
+                            <span class="col-1"></span>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between">
+                            <strong>Thông tin thanh toán</strong>
+                            <strong>Tổng tiền: <span class="price__color pricesTotal"></span></strong>
+                            <span class="col-1"></span>
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <select class="form-select shadow-none col" id="payment-selected"
+                                aria-label="Default select example">
+                                <option value="0" selected>Hình thức thanh toán</option>
+                                <option value="1">Thanh toán khi nhận hàng</option>
+                                <option value="2">Chuyển tiền qua ngân hàng</option>
+                                <option value="3">Chuyển tiền qua MoMo</option>
+                            </select>
+                            <span class="col-1"></span>
+                        </div>
+                        <div class="mb-3 ms-4 d-none" id="bank-transfer">
+                            <strong>Chủ tài khoản:</strong> TRAN PHUOC ANH <br>
+                            <strong>Số tài khoản:</strong> 1019558246 <br>
+                            <strong>Ngân hàng:</strong> VIETCOMBANK <br>
+                            <strong>Chi nhánh:</strong> Quảng Nam
+                        </div>
+                        <div class="mb-3 ms-4 d-none" id="momo-transfer">
+                            <strong>Chủ tài khoản:</strong> TRAN PHUOC ANH <br>
+                            <strong>Số tài khoản:</strong> 0773605741 <br>
+                            <strong>Ngân hàng:</strong> MoMo <br>
+                            <strong>Chi nhánh:</strong> Quảng Nam
+                        </div>
+                        <div class="mb-3 row align-items-center">
+                            <button class="rounded-pill form-control title__color col" type="submit">
+                                Xác nhận và thanh toán
+                            </button>
+                            <span class="col-1"></span>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap py-5">
+            <div class="row">
+                <div class="col-6">
+                    <h3>AppleMart</h3>
+                    <h5 class="pt-3">Liên Hệ</h5>
+                    <span class="d-flex py-3">
+                        <i class="fa fa-phone me-2"></i>
+                        <span>
+                            <a href="tel:+84 773-605-741">+84 773-605-741</a>
+                            <br>
+                            <a href="tel:+84 906-275-018">+84 906-275-018</a>
+                        </span>
+                    </span>
+                    <span class="d-flex py-3">
+                        <i class="fa fa-envelope me-2"></i>
+                        <span>
+                            <a href="mailto:anhtp.22it@vku.udn.vn">anhtp.22it@vku.udn.vn</a>
+                            <br>
+                            <a href="mailto:huent.22it@vku.udn.vn">huent.22it@vku.udn.vn</a>
+                        </span>
+                    </span>
+                    <span class="mt-5">
+                        <h5>Tải Ứng Dụng</h5>
+                        <img class="w-25" src="./img/Download_on_the_App_Store_logo.png" alt="">
+                        <img class="w-25" src="./img/R.png" alt="">
+                    </span>
+                </div>
+                <div class="col-6">
+                    <h5>Hỗ trợ dịch vụ</h5>
+                    <ul>
+                        <li><a href="#">Mua hàng trả góp</a></li>
+                        <li><a href="#">Hướng dẫn đặt hàng và thanh toán</a></li>
+                        <li><a href="#">Tra cứu đơn hàng</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Phạm vi, điều khoản trong gói bảo hành mở rộng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+                        <li><a href="#">Điều khoản mua bán hàng hóa</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,9 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <title>Apple Mart</title>
 </head>
@@ -43,9 +46,9 @@
                         <i class="fa fa-user"></i> Đăng nhập
                     </a>
                     <span class="header__user__line mx-2">|</span>
-                    <span>
+                    <a class="text-decoration-none" href="./CART/index.html">
                         <i class="fa fa-shopping-cart"></i> Giỏ hàng
-                    </span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -54,7 +57,7 @@
         <nav class="header__navbar navbar-expand-md navbar-light my-2">
             <div class="wrap">
                 <div class="container-fluid">
-                    <div class="navbar-toggler d-flex border-0">
+                    <div class="navbar-toggler d-flex border-0 align-items-center">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -65,38 +68,38 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav justify-content-between w-100">
-                            <li class="nav-item mx-1 mx-lg-2 text-center active">
-                                <a class="nav-link active" href="#">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1 active">
+                                <a class="nav-link" href="./index.html">
                                     Trang Chủ
                                     <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1 mx-lg-2 text-center">
-                                <a class="nav-link active" href="#">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./PRODUCT/iPhone.html">
                                     iPhone
                                     <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1 mx-lg-2 text-center">
-                                <a class="nav-link active" href="#">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./PRODUCT/iPad.html">
                                     iPad
                                     <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1 mx-lg-2 text-center">
-                                <a class="nav-link active" href="#">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./PRODUCT/macbook.html">
                                     MacBook
                                     <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1 mx-lg-2 text-center">
-                                <a class="nav-link active" href="#">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./PRODUCT/airpods.html">
                                     AirPods
                                     <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1 mx-lg-2 text-center">
-                                <a class="nav-link active" href="#">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./PRODUCT/orther.html">
                                     Khác
                                     <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
                                 </a>
@@ -158,81 +161,12 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">FLASH SALE</h5>
-                    <a>
-                        <span>Xem tất cả</span>
-                        <span><i class="fa fa-angle-right ms-2"></i></span>
-                    </a>
                 </div>
                 <hr class="m-0">
-                <div class="product d-flex justify-content-between my-3">
-                    <div class="card mx-2 border-0">
-                        <div class="img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="product d-flex my-3"></div>
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </button>
-                            </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </button>
-                            </li>
-                        </ul>
+                        <ul class="pagination"></ul>
                     </nav>
                 </div>
             </div>
@@ -243,81 +177,18 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">iPhone</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/iPhone.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
                 </div>
                 <hr class="m-0">
 
-                <div class="product d-flex justify-content-between my-3">
-                    <div class="card mx-2 border-0">
-                        <div class="img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="product d-flex my-3"></div>
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </button>
-                            </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </button>
-                            </li>
+
                         </ul>
                     </nav>
                 </div>
@@ -329,82 +200,17 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">iPad</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/iPad.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
                 </div>
                 <hr class="m-0">
 
-                <div class="product d-flex justify-content-between my-3">
-                    <div class="card mx-2 border-0">
-                        <div class="img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="product d-flex my-3"></div>
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </button>
-                            </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </button>
-                            </li>
-                        </ul>
+                        <ul class="pagination"></ul>
                     </nav>
                 </div>
             </div>
@@ -415,82 +221,17 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">MacBook</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/macbook.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
                 </div>
                 <hr class="m-0">
 
-                <div class="product d-flex justify-content-between my-3">
-                    <div class="card mx-2 border-0">
-                        <div class="img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="product d-flex my-3"></div>
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </button>
-                            </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </button>
-                            </li>
-                        </ul>
+                        <ul class="pagination"></ul>
                     </nav>
                 </div>
             </div>
@@ -501,82 +242,17 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">AirPods</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/airpods.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
                 </div>
                 <hr class="m-0">
 
-                <div class="product d-flex justify-content-between my-3">
-                    <div class="card mx-2 border-0">
-                        <div class="img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                    <div class="card mx-2 border-0">
-                        <div class="img img d-flex justify-content-center align-items-center py-4">
-                            <a href="./DES_PRODUCT/iphone14.html"><img src="./img/iphone14.webp" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-title text-black fw-bold">iPhone 14 Pro (256GB) - Chính hãng VN/A</div>
-                            <hr>
-                            <div class="card-text fw-bold">27,390,000 đ</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="product d-flex my-3"></div>
                 <div class="pagination d-flex justify-content-center align-items-center">
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </button>
-                            </li>
-                            <li class="page-item active"><button class="page-link mx-2">1</button></li>
-                            <li class="page-item"><button class="page-link mx-2">2</button></li>
-                            <li class="page-item"><button class="page-link mx-2">3</button></li>
-                            <li class="page-item">
-                                <button class="page-link mx-2" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </button>
-                            </li>
-                        </ul>
+                        <ul class="pagination"></ul>
                     </nav>
                 </div>
             </div>
@@ -587,49 +263,49 @@
             <div class="wrap">
                 <div class="title d-flex justify-content-between align-items-end">
                     <h5 class="title__color fw-bold">PHỤ KIỆN</h5>
-                    <a>
+                    <a class="text-decoration-none" href="./PRODUCT/orther.html">
                         <span>Xem tất cả</span>
                         <span><i class="fa fa-angle-right ms-2"></i></span>
                     </a>
                 </div>
                 <hr class="m-0">
                 <div class="phukien__product row justify-content-around my-3">
-                    <div class="card mx-0 col-4 col-lg-2">
+                    <a href="./PRODUCT/orther.html" class="card text-decoration-none mx-0 col-4 col-lg-2">
                         <div class="img d-flex justify-content-center align-items-center p-3">
                             <img src="./img/oplung.webp" alt="">
                         </div>
                         <h5 class="text-center py-2 text-black">Ốp Lưng</h5>
-                    </div>
-                    <div class="card mx-0 col-4 col-lg-2">
+                    </a>
+                    <a href="./PRODUCT/orther.html" class="card text-decoration-none mx-0 col-4 col-lg-2">
                         <div class="img d-flex justify-content-center align-items-center p-3">
                             <img src="./img/cusac.webp" alt="">
                         </div>
                         <h5 class="text-center py-2 text-black">Củ Sạc</h5>
-                    </div>
-                    <div class="card mx-0 col-4 col-lg-2">
+                    </a>
+                    <a href="./PRODUCT/orther.html" class="card text-decoration-none mx-0 col-4 col-lg-2">
                         <div class="img d-flex justify-content-center align-items-center p-3">
                             <img src="./img/day-cap.webp" alt="">
                         </div>
                         <h5 class="text-center py-2 text-black">Dây Cáp</h5>
-                    </div>
-                    <div class="card mx-0 col-4 col-lg-2">
+                    </a>
+                    <a href="./PRODUCT/orther.html" class="card text-decoration-none mx-0 col-4 col-lg-2">
                         <div class="img d-flex justify-content-center align-items-center p-3">
                             <img src="./img/ban-phim.webp" alt="">
                         </div>
                         <h5 class="text-center py-2 text-black">Bàn Phím</h5>
-                    </div>
-                    <div class="card mx-0 col-4 col-lg-2">
+                    </a>
+                    <a href="./PRODUCT/orther.html" class="card text-decoration-none mx-0 col-4 col-lg-2">
                         <div class="img d-flex justify-content-center align-items-center p-3">
                             <img src="./img/chuot.png" alt="">
                         </div>
                         <h5 class="text-center py-2 text-black">Chuột</h5>
-                    </div>
-                    <div class="card mx-0 col-4 col-lg-2">
+                    </a>
+                    <a href="./PRODUCT/orther.html" class="card text-decoration-none mx-0 col-4 col-lg-2">
                         <div class="img d-flex justify-content-center align-items-center p-3">
                             <img src="./img/apple-logo.png" alt="">
                         </div>
                         <h5 class="text-center py-2 text-black">Sản Phẩm Khác</h5>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -660,8 +336,10 @@
                     </span>
                     <span class="mt-5">
                         <h5>Tải Ứng Dụng</h5>
-                        <img class="w-25" src="./img/Download_on_the_App_Store_logo.png" alt="">
-                        <img class="w-25" src="./img/R.png" alt="">
+                        <a href="https://www.apple.com/app-store/"><img class="w-25"
+                                src="./img/Download_on_the_App_Store_logo.png" alt=""></a>
+                        <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1"><img class="w-25"
+                                src="./img/R.png" alt=""></a>
                     </span>
                 </div>
                 <div class="col-6">
@@ -682,6 +360,7 @@
         </div>
     </footer>
 
+    <script src="./JS/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

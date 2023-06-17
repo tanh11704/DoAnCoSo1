@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
     color: #777979;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -62,13 +65,14 @@ i {
     transform: translateY(10px);
 }
 
-.product {
-    cursor: pointer;
-}
-
 .product .card {
     border: 1px solid #efefef !important;
     border-radius: 5% !important;
+    transition: 0.2s;
+}
+
+.product .card:hover {
+    transform: scale(1.1);
 }
 
 .product .card .img {
@@ -79,6 +83,16 @@ i {
 
 .product .card .img * {
     height: auto;
+}
+
+.product .card .card-title {
+    width: 175px;
+    height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .product .card .card-text {
@@ -174,9 +188,6 @@ footer .row li:hover a {
         display: none;
     }
 
-    .product>div:nth-child(n+3) {
-        display: none;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -201,6 +212,11 @@ footer .row li:hover a {
     .header__user__line {
         display: none;
     }
+
+    .product .card .card-title {
+        width: 160px;
+    }
+
 }
 
 @media (max-width: 1199.98px) {}

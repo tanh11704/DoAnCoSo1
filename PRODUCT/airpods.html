@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+
+        <!-- WELCOME -->
+        <section class="header__welcome bg-light">
+            <div class="wrap d-flex justify-content-between py-2">
+                <div>Chào mừng bạn đến với Apple Mart</div>
+                <div><i class="fa fa-map-marker-alt me-2"></i> Đà Nẵng</div>
+            </div>
+        </section>
+
+        <!-- CENTER -->
+        <section>
+            <div class="wrap d-flex justify-content-between align-items-center my-2">
+                <div class="header__logo d-flex align-items-center">
+                    <i class="fa fa-stream me-3"></i>
+                    <h1 class="title__color">Apple Mart</h1>
+                </div>
+                <div class="header__search  input-group w-50">
+                    <span class="input-group-text border-0 background_color_second" style="background-color: white;"><i
+                            class="fa fa-search"></i></span>
+                    <input type="text" class="form-control border-0 background_color_second p-2"
+                        placeholder="Tìm kiếm sản phẩm">
+                    <span class="input-group-text background_color_second border-0"><i class="fa fa-list-ul"></i></span>
+                </div>
+                <div class="header__user ms-2">
+                    <a class="me-2 text-decoration-none" href="../LOGIN/index.html">
+                        <i class="fa fa-user"></i> Đăng nhập
+                    </a>
+                    <span class="header__user__line mx-2">|</span>
+                    <a class="text-decoration-none" href="../CART/index.html">
+                        <i class="fa fa-shopping-cart"></i> Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0">
+        <!-- NAVIGATION BAR -->
+        <nav class="header__navbar navbar-expand-md navbar-light my-2">
+            <div class="wrap">
+                <div class="container-fluid">
+                    <div class="navbar-toggler d-flex border-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <span class="navbar-toggler border-0" href="#" style="color: #777979;">Danh sách sản
+                            phẩm</span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav justify-content-between w-100">
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="../index.html">
+                                    Trang Chủ
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./iPhone.html">
+                                    iPhone
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./iPad.html">
+                                    iPad
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./macbook.html">
+                                    MacBook
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1 active">
+                                <a class="nav-link" href="./airpods.html">
+                                    AirPods
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 mx-lg-2 text-center mb-1">
+                                <a class="nav-link" href="./orther.html">
+                                    Khác
+                                    <i class="fa fa-angle-down ps-1 ps-lg-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="my-3">
+        <div class="wrap">
+            <div class="menu mb-3">
+                <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a> <i class="fa fa-angle-right"></i>
+                <span>AirPods</span>
+            </div>
+            <div class="content row justify-content-center justify-content-md-between">
+                <div class="content__filter col-12 col-md-3 py-2" style="height: fit-content;">
+                    <div class="d-block d-md-none">
+                        <button id="filter-button" class="btn border-info">
+                            <i class="fa fa-filter"></i> Lọc
+                        </button>
+                    </div>
+                    <div id="filter" class="d-none d-md-block">
+                        <div class="content__filter__title text-center mb-3">
+                            <h5 class="me-auto">LỌC SẢN PHẨM</h5>
+                            <button class="d-block d-md-none position-absolute bg-white rounded-3 border-0"
+                                id="close-filter" style="top: 0; right: 0;">
+                                <i class="fa fa-times p-2" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="filter__group mb-3">
+                            <h6>Khoảng giá (đ)</h6>
+                            <div class="row">
+                                <div class="col-12 mb-3 mb-lg-0 col-lg">
+                                    <input type="text" class="form-control shadow-none" name="minPrice" id="minPrice"
+                                        placeholder="Tối thiểu (đ)">
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <input type="text" class="form-control shadow-none" name="minPrice" id="minPrice"
+                                        placeholder="Tối đa (đ)">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="filter__group filter-version mb-3">
+                            <h6>Dung lượng bộ nhớ</h6>
+                            <div class="row justify-content-around">
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="version"
+                                        id="128gb" value="128gb">
+                                    <label class="form-check-label ps-4" for="128gb">128GB</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="version"
+                                        id="256gb" value="option1">
+                                    <label class="form-check-label ps-4" for="256gb">256GB</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="version"
+                                        id="512gb" value="option1">
+                                    <label class="form-check-label ps-4" for="512gb">512GB</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="version" id="1T"
+                                        value="option1">
+                                    <label class="form-check-label ps-4" for="1T">1T</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="filter__group, filter-color mb-3">
+                            <h6>Màu sắc</h6>
+                            <div class="row justify-content-around">
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="white" id="white"
+                                        value="white">
+                                    <label class="form-check-label ps-4" for="white">Trắng</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="black" id="black"
+                                        value="black">
+                                    <label class="form-check-label ps-4" for="black">Đen</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="pink" id="pink"
+                                        value="pink">
+                                    <label class="form-check-label ps-4" for="pink">Hồng</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="checkbox" name="green" id="green"
+                                        value="green">
+                                    <label class="form-check-label ps-4" for="green">Xanh lá</label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="filter__group, filter-model mb-3">
+                            <h6>Thế hệ</h6>
+                            <div class="row justify-content-around">
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="radio" name="model" id="iphone14"
+                                        value="iphone14">
+                                    <label class="form-check-label ps-4" for="iphone14">iPhone 14</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="radio" name="model" id="iphone13"
+                                        value="iphone13">
+                                    <label class="form-check-label ps-4" for="iphone13">iPhone 13</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="radio" name="model" id="iphone12"
+                                        value="iphone12">
+                                    <label class="form-check-label ps-4" for="iphone12">iPhone 12</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="radio" name="model" id="iphone11"
+                                        value="iphone11">
+                                    <label class="form-check-label ps-4" for="iphone11">iPhone 11</label>
+                                </div>
+                                <div class="col-5 py-2 position-relative">
+                                    <input class="form-check-input shadow-none" type="radio" name="model" id="iphoneX"
+                                        value="iphoneX">
+                                    <label class="form-check-label ps-4" for="iphoneX">iPhone X </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__product col-8">
+                    <div class="product row justify-content-start">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap py-5">
+            <div class="row">
+                <div class="col-6">
+                    <h3>AppleMart</h3>
+                    <h5 class="pt-3">Liên Hệ</h5>
+                    <span class="d-flex py-3">
+                        <i class="fa fa-phone me-2"></i>
+                        <span>
+                            <a href="tel:+84 773-605-741">+84 773-605-741</a>
+                            <br>
+                            <a href="tel:+84 906-275-018">+84 906-275-018</a>
+                        </span>
+                    </span>
+                    <span class="d-flex py-3">
+                        <i class="fa fa-envelope me-2"></i>
+                        <span>
+                            <a href="mailto:anhtp.22it@vku.udn.vn">anhtp.22it@vku.udn.vn</a>
+                            <br>
+                            <a href="mailto:huent.22it@vku.udn.vn">huent.22it@vku.udn.vn</a>
+                        </span>
+                    </span>
+                    <span class="mt-5">
+                        <h5>Tải Ứng Dụng</h5>
+                        <img class="w-25" src="./img/Download_on_the_App_Store_logo.png" alt="">
+                        <img class="w-25" src="./img/R.png" alt="">
+                    </span>
+                </div>
+                <div class="col-6">
+                    <h5>Hỗ trợ dịch vụ</h5>
+                    <ul>
+                        <li><a href="#">Mua hàng trả góp</a></li>
+                        <li><a href="#">Hướng dẫn đặt hàng và thanh toán</a></li>
+                        <li><a href="#">Tra cứu đơn hàng</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Phạm vi, điều khoản trong gói bảo hành mở rộng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+                        <li><a href="#">Điều khoản mua bán hàng hóa</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/airpods.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

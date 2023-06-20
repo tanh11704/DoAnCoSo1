@@ -130,7 +130,7 @@ let iPhoneProducts = [
   {
     name: "iPhone 14 Pro (256GB) - Chính hãng VN/A",
     price: "27,390,000 đ",
-    img: "./img/iphone14-prm.webp",
+    img: "../img/iphone14-prm.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
@@ -160,37 +160,37 @@ let iPhoneProducts = [
   {
     name: "iPhone 14 (128GB) - Chính hãng VN/A",
     price: "18,990,000 ₫",
-    img: "./img/iphone14.webp",
+    img: "./img/iphone14-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: "iPhone 14 (256GB) - Chính hãng VN/A",
     price: "21,890,000 ₫",
-    img: "./img/iphone14.webp",
+    img: "./img/iphone14-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: "iPhone 14 (512GB) - Chính hãng VN/A",
     price: "23,490,000 ₫",
-    img: "./img/iphone14.webp",
+    img: "./img/iphone14-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: "iPhone 14 Plus (128GB) - Chính hãng VN/A",
     price: "21,490,000 ₫",
-    img: "./img/iphone14.webp",
+    img: "./img/iphone14-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: "iPhone 14 Plus (256GB) - Chính hãng VN/A",
     price: "24,390,000 ₫",
-    img: "./img/iphone14.webp",
+    img: "./img/iphone14-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: "iPhone 14 Plus (512GB) - Chính hãng VN/A",
     price: "24,990,000 ₫",
-    img: "./img/iphone14.webp",
+    img: "./img/iphone14-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
 ];
@@ -235,31 +235,31 @@ let iPadProducts = [
   {
     name: `iPad Gen 9 - 10.2" - (2021) - Wifi - 64GB - Chính Hãng Apple Việt Nam`,
     price: "6,860,000 ₫",
-    img: "./img/ipad-gen-9.webp",
+    img: "./img/ipad-gen9-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: `iPad Gen 9 - 10.2" - (2021) - Wifi - 256GB - Chính Hãng Apple VN`,
     price: "10,990,000 ₫",
-    img: "./img/ipad-gen-9.webp",
+    img: "./img/ipad-gen9-1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: `iPad Gen 9 - 10.2" - (2021) - 4G - 64GB - Chính Hãng Apple Việt Nam`,
     price: "9,690,000 ₫",
-    img: "./img/ipad-gen-9-4g.webp",
+    img: "./img/ipad-gen9-4g.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: `iPad Gen 9 - 10.2" - (2021) - 4G - 256GB - Chính Hãng Apple Việt Nam`,
     price: "12,990,000 ₫",
-    img: "./img/ipad-gen-9-4g.webp",
+    img: "./img/ipad-gen9-4g.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
     name: `iPad Air 5 M1 10.9" - 2022 - Wifi - 64GB - Chính Hãng Apple Việt Nam`,
     price: "13,990,000 ₫",
-    img: "../img/ipad-air-5-m1.webp",
+    img: "./img/ipad-air5-m1.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
 ];

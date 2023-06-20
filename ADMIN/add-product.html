@@ -14,9 +14,12 @@
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <!-- Thư Viện Charjs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Thư Viện SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
-    <title>Phân tích</title>
+    <link rel="stylesheet" href="./css/add-product.css">
+    <title>Thông tin tài khoản</title>
 </head>
 
 <body>
@@ -56,12 +59,12 @@
                                 </span>
                             </a>
                             <ul class="cat-sub-menu">
-                                <li><a href="./change-info.html">Sửa thông tin</a></li>
+                                <li><a class="" href="./change-info.html">Sửa thông tin</a></li>
                                 <li><a href="./acount-setting.html">Quản lý tài khoản</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="show-cat-btn active" href="">
+                            <a class="show-cat-btn" href="">
                                 <i class="fa fa-edit"></i>Quản Lý
                                 <span class="category__btn transparent-btn">
                                     <i class="fa fa-chevron-circle-down"></i>
@@ -101,14 +104,92 @@
             </nav>
             <div class="container p-4">
                 <h2 class="main-title fw-bold fs-5 lh-1 mb-4">Bảng Điều Khiển</h2>
-                <div class="chart w-100 bg-white rounded-3 mb-3">
-                    <canvas class="p-3 w-100" id="myChart" role="img"></canvas>
+                <div class="info p-3">
+                    <div class="info__title">
+                        <h5>Thêm Sản Phẩm</h5>
+                        <small>Nhập thông tin sản phẩm</small>
+                    </div>
+                    <hr>
+                    <div class="info__body row flex-column-reverse flex-lg-row">
+                        <div class="info__body__form col-12 col-md-12 col-lg-7">
+                            <form class="fs-6" id="add-product-form">
+                                <div class="row mb-3">
+                                    <label for="inputId" class="col-sm-3 col-form-label text-start">Mã sản
+                                        phẩm</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" class="form-control shadow-none" id="inputId" value="1"
+                                            disabled>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="inputName" class="col-sm-3 col-form-label text-start">Tên sản
+                                        phẩm</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control shadow-none" id="inputName" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="inputImage" class="col-sm-3 col-form-label text-start">Hình ảnh
+                                        (URL)</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control shadow-none" id="inputImage" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="inputType" class="col-sm-3 col-form-label text-start">Loại sản
+                                        phẩm</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-select shadow-none" id="inputType"
+                                            aria-label="Type Product Select" required>
+                                            <option selected>Loại sản phẩm</option>
+                                            <option value="1">iPhone</option>
+                                            <option value="2">iPad</option>
+                                            <option value="3">MacBook</option>
+                                            <option value="4">AirPods</option>
+                                            <option value="5">Khác</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="inputCostPrice" class="col-sm-3 col-form-label text-start">Giá
+                                        nhập</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control shadow-none" id="inputCostPrice"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 align-items-center">
+                                    <label for="inputSellPrice" class="col-sm-3 col-form-label text-start">Giá
+                                        bán</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control shadow-none" id="inputSellPrice"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-0"></div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary border-0" id="save"
+                                            style="background-color: #0F94CF;">
+                                            Lưu
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div
+                            class="info__body__avatar col-12 col-md-12 col-lg-5 d-flex flex-column align-items-center py-4">
+                            <div class="avatar mb-3" id="productImage"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
 
     <script src="./js/index.js"></script>
+    <script src="./js/add-product.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

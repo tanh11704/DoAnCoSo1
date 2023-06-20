@@ -14,19 +14,19 @@ $(document).ready(function () {
 var accounts = [
   {
     id: 1,
-    username: "user1",
-    fullname: "Người dùng 1",
-    access: "User",
-    phone: "123456789",
-    email: "user1@example.com",
+    username: "admin@gmail.com",
+    fullname: "Admin",
+    access: "admin",
+    phone: "0773605741",
+    email: "admin@gmail.com",
   },
   {
     id: 2,
-    username: "user2",
-    fullname: "Người dùng 2",
-    access: "Admin",
-    phone: "987654321",
-    email: "user2@example.com",
+    username: "user@gmail.com",
+    fullname: "Người dùng",
+    access: "user",
+    phone: "0383123004",
+    email: "user@gmail.com",
   },
 ];
 

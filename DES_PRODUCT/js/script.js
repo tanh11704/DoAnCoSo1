@@ -162,12 +162,12 @@ $(document).ready(function () {
 
   $("#buyNow").click(function (e) {
     e.preventDefault();
-    window.location.href = "../../PAYMENT/buyNow.html";
+    window.location.href = "../PAYMENT/buyNow.html";
   });
 
   $("#installment").click(function (e) {
     e.preventDefault();
-    window.location.href = "../../PAYMENT/tragop.html";
+    window.location.href = "../PAYMENT/tragop.html";
   });
 });
 

@@ -100,7 +100,7 @@ let flashSaleProducts = [
     name: `MacBook Air M2 13.6" 2022 - 256GB - Chính hãng Apple Việt Nam`,
     currentPrice: "29,990,000 ₫",
     salePrice: "26,990,000 ₫",
-    img: "../img/mac-air-m2.webp",
+    img: "./img/mac-air-m2.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
@@ -130,7 +130,7 @@ let iPhoneProducts = [
   {
     name: "iPhone 14 Pro (256GB) - Chính hãng VN/A",
     price: "27,390,000 đ",
-    img: "../img/iphone14-prm.webp",
+    img: "./img/iphone14-prm.webp",
     link: "./DES_PRODUCT/iphone14.html",
   },
   {
